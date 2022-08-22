@@ -9,22 +9,31 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var TotalSuma: UILabel!
+    @IBOutlet weak var imprprop: UILabel!
     @IBOutlet weak var Cantidad: UITextField!
     @IBOutlet weak var propina: UISlider!
     @IBOutlet weak var lblContador: UILabel!
-  
+    var Total = Float(0.0);
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
     @IBAction func IbSlider(_ sender: Any) {
-        let cuenta = "54.8"
-        let valorslider = Float(cuenta)
+        //let valorslider = Float(cuenta)
+        let CantidadCuenta = Cantidad.text!
+        let cantidadlabel = Float (CantidadCuenta) ?? 0.0
         lblContador.text = "\(Int(propina.value))%"
+        let porcentajeP = Float(Int(propina.value))
+        let Propina = (porcentajeP * (cantidadlabel/100.0))
+        Total = cantidadlabel + Propina
+        imprprop.text = String(format: "$ %.2f", Propina)
+        TotalSuma.text = String(format:"$ %.2f", Total)
         
-        let porcentajeP = float(Int(propina.value))
-        let propina = cuenta * porcentajeP / 100.0
+        
+        
+        
+        
         
         
         

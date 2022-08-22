@@ -68,14 +68,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$ 0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2er-cI-coM">
-                                <rect key="frame" x="309" y="293" width="50" height="21"/>
+                                <rect key="frame" x="287" y="293" width="72" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$ 0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVY-LE-INo">
-                                <rect key="frame" x="309" y="340" width="50" height="21"/>
+                                <rect key="frame" x="287" y="340" width="72" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -94,6 +94,8 @@
                     </view>
                     <connections>
                         <outlet property="Cantidad" destination="BJl-YC-U3g" id="RkH-1F-VYe"/>
+                        <outlet property="TotalSuma" destination="TVY-LE-INo" id="gQh-mb-dbL"/>
+                        <outlet property="imprprop" destination="2er-cI-coM" id="bAL-PX-NUe"/>
                         <outlet property="lblContador" destination="2K2-T4-KuV" id="f2t-6K-a5n"/>
                         <outlet property="propina" destination="0OC-4p-Bzn" id="CEC-VJ-TFz"/>
                     </connections>
